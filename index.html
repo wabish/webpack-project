@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>jquery.nail demo - cobish</title>
+        <style>
+            * {margin: 0;padding: 0;font-family: Arial;}
+            h1 {font-size: 40px;text-align: center;margin: 150px 0;}
+            h1 a {color: #666;}
+            .main-box {position: relative;margin: 0 auto 800px;width: 1000px;color: #fff;font: bold 16px/1.5 Arial;text-align: center;}
+            .left-box {position: absolute;top: 0;bottom: 0;width: 200px;background: #abc;}
+            .left-box ul {width: 200px;background: #869EB5;transition: background .2s ease;}
+            .left-box ul li {list-style: none;border-bottom: 1px solid #fff;height: 100px;line-height: 100px;}
+            .right-box div {margin-left: 230px;height: 400px;background: #abc;line-height: 400px;}
+            .right-box div:nth-child(odd) {background: #869EB5;}
+        </style>
+    </head>
+    <body>
+        <h1><a href="https://github.com/cobish/jquery.nail">jquery.nail</a></h1>
+        <div class="main-box">
+            <div class="left-box">
+                <ul id="leftNav">
+                    <li>one</li>
+                    <li>two</li>
+                    <li>three</li>
+                    <li>four</li>
+                    <li>five</li>
+                    <li>six</li>
+                </ul>
+            </div>
+            <div class="right-box">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <script id="container" type="text/html">
+            {{each list as value i}}
+                <div>索引 {{i + 1}} ：{{value}}</div>
+            {{/each}}
+        </script>
+
+        <script type="text/javascript" src="./src/lib/jquery-1.11.1.min.js"></script>
+        <script type="text/javascript" src="./src/lib/jquery.nail.min.js"></script>
+        <script type="text/javascript" src="./src/lib/artTemplate.min.js"></script>
+        <script type="text/javascript" src="./dist/vendor.js"></script>
+        <script type="text/javascript" src="./dist/index.js"></script>
+    </body>
+</html>
