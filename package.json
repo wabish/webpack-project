@@ -1,0 +1,12 @@
+{
+  "name": "webpack-project",
+  "version": "1.0.0",
+  "author": "cobish",
+  "blog": "http://cobish.github.io",
+  "license": "ISC",
+  "devDependencies": {
+    "jshint": "^2.9.2",
+    "jshint-loader": "^0.8.3",
+    "webpack": "^1.13.1"
+  }
+}
