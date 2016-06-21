@@ -2,10 +2,6 @@ var path = require('path');
 var fs = require('fs');
 var webpack = require('webpack');
 
-var path = require('path');
-var ROOT_PATH = path.resolve(process.cwd());
-var SRC_PATH = path.resolve(ROOT_PATH, 'src');
-
 module.exports = {
     cache: true,
     devtool: 'inline-source-map',
@@ -35,11 +31,11 @@ module.exports = {
             '$': false
         }
     },
-    resolve: {
-        alias: {
-            cat: path.resolve(__dirname, 'src/cat.js')
-        }
-    },
+resolve: {
+    alias: {
+        cat: path.resolve(__dirname, 'src/cat.js')
+    }
+},
     externals: {
         jquery: 'window.$',
         artTemplate: 'window.template',
