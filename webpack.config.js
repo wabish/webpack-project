@@ -31,11 +31,11 @@ module.exports = {
             '$': false
         }
     },
-resolve: {
-    alias: {
-        cat: path.resolve(__dirname, 'src/cat.js')
-    }
-},
+    resolve: {
+        alias: {
+            cat: path.resolve(__dirname, 'src/cat.js')
+        }
+    },
     externals: {
         jquery: 'window.$',
         artTemplate: 'window.template',
